@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import heroImg from "../assets/Hero/hero.png"; // Import the hero image
 
 const HeroSection = () => {
   return (
@@ -55,7 +56,7 @@ const HeroSection = () => {
             style={{ textAlign: "center" }}
           >
             <img
-              src="/src/assets/Hero/hero.png"
+              src={heroImg} // Use the imported hero image
               className="img-fluid animated"
               alt="Hero"
               style={{

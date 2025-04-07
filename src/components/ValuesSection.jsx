@@ -1,44 +1,50 @@
-import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
+import "bootstrap/dist/css/bootstrap.min.css";
+import image1 from "../assets/Values/image1.png";
+import image2 from "../assets/Values/image2.png";
+import image3 from "../assets/Values/image3.png";
+import image4 from "../assets/Values/image4.png";
+import image5 from "../assets/Values/image5.png";
+import image6 from "../assets/Values/image6.png";
 
 const ValuesSection = () => {
   const values = [
     {
-      imgSrc: "/src/assets/Values/image1.png",
+      imgSrc: image1,
       title: "Innovation at the Forefront",
       description:
         "We harness the power of cutting-edge AI technologies, including Large Language Models (LLMs), to create transformative solutions that enhance recruitment processes and job-seeking experiences.",
       delay: 100,
     },
     {
-      imgSrc: "/src/assets/Values/image2.png",
+      imgSrc: image2,
       title: "Candidate Empowerment",
       description:
         "We are committed to equipping aspirants with the tools they need to succeed. From mock interviews to skill assessments, we ensure every candidate is prepared for their dream role.",
       delay: 200,
     },
     {
-      imgSrc: "/src/assets/Values/image3.png",
+      imgSrc: image3,
       title: "Streamlined Recruitment for Enterprises",
       description:
         "For businesses, we simplify hiring with intelligent resume sorting, job creation tools, and actionable analytics, helping enterprises find the perfect candidates efficiently.",
       delay: 300,
     },
     {
-      imgSrc: "/src/assets/Values/image4.png",
+      imgSrc: image4,
       title: "Transparency and Ethical Practices",
       description:
         "We uphold the highest standards of transparency and data privacy, ensuring all interactions on our platform are secure, fair, and trustworthy.",
       delay: 400,
     },
     {
-      imgSrc: "/src/assets/Values/image5.png",
+      imgSrc: image5,
       title: "Inclusivity and Diversity",
       description:
         "We champion a bias-free hiring environment. Our AI is designed to promote diversity and foster inclusivity, helping enterprises build balanced and equitable teams.",
       delay: 500,
     },
     {
-      imgSrc: "/src/assets/Values/image6.png",
+      imgSrc: image6,
       title: "Continuous Improvement",
       description:
         "We believe in constant growth—both for our platform and our users. By embracing feedback and staying ahead of industry trends, we aim to deliver the best solutions for evolving hiring needs.",
@@ -64,7 +70,8 @@ const ValuesSection = () => {
               data-aos-delay={value.delay}
               key={index}
             >
-              <div className="card shadow-lg rounded-4 p-4 h-100 d-flex flex-column align-items-center justify-content-between"
+              <div
+                className="card shadow-lg rounded-4 p-4 h-100 d-flex flex-column align-items-center justify-content-between"
                 style={{
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
                   height: "100%",

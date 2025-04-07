@@ -3,6 +3,11 @@ import "slick-carousel/slick/slick-theme.css";
 import SlickCarousel from "react-slick";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// Import the images from the src/assets folder
+import client1 from "../assets/client/client1.jpg";
+import client2 from "../assets/client/client2.jpg";
+import client3 from "../assets/client/client3.jpg";
+
 const ClientsSection = () => {
   const slickSettings = {
     infinite: true,
@@ -34,11 +39,7 @@ const ClientsSection = () => {
     ],
   };
 
-  const clientImages = [
-    "/src/assets/client/client1.jpg",
-    "/src/assets/client/client2.jpg",
-    "/src/assets/client/client3.jpg",
-  ];
+  const clientImages = [client1, client2, client3];
 
   // Duplicate the array to ensure a seamless loop
   const loopedClientImages = [...clientImages, ...clientImages];

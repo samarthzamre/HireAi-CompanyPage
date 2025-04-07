@@ -2,37 +2,70 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// Import team images from the assets folder
+import krishnaImg from "../assets/team/krishna.jpg";
+import samarthImg from "../assets/team/samarth.png";
+import aniketImg from "../assets/team/aniket.jpg";
+import niharikaImg from "../assets/team/niharika.jpg";
+import swastikImg from "../assets/team/swastik.png";
+
 const TeamSection = () => {
   const teamData = [
     {
       name: "Krishna Kolekar",
       role: "AI Developer",
-      imgSrc: "/src/assets/team/krishna.jpg",
-      socialLinks: [{ icon: "bi bi-linkedin", href: "https://www.linkedin.com/in/krishna-kolekar-23300111k" }],
+      imgSrc: krishnaImg,
+      socialLinks: [
+        {
+          icon: "bi bi-linkedin",
+          href: "https://www.linkedin.com/in/krishna-kolekar-23300111k",
+        },
+      ],
     },
     {
       name: "Samarth Zamre",
       role: "MERN Stack Developer",
-      imgSrc: "/src/assets/team/samarth.png",
-      socialLinks: [{ icon: "bi bi-linkedin", href: "https://www.linkedin.com/in/samarth-zamre-9b8498332/" }],
+      imgSrc: samarthImg,
+      socialLinks: [
+        {
+          icon: "bi bi-linkedin",
+          href: "https://www.linkedin.com/in/samarth-zamre-9b8498332/",
+        },
+      ],
     },
     {
       name: "Aniket Gazalwar",
       role: "Data Analyst",
-      imgSrc: "/src/assets/team/aniket.jpg",
-      socialLinks: [{ icon: "bi bi-linkedin", href: "https://www.linkedin.com/in/aniket-gazalwar-13141b22b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }],
+      imgSrc: aniketImg,
+      socialLinks: [
+        {
+          icon: "bi bi-linkedin",
+          href:
+            "https://www.linkedin.com/in/aniket-gazalwar-13141b22b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+      ],
     },
     {
       name: "Niharika Gupta",
       role: "Frontend Developer and AI Developer",
-      imgSrc: "/src/assets/team/niharika.jpg",
-      socialLinks: [{ icon: "bi bi-linkedin", href: "https://www.linkedin.com/in/niharika-gupta-086ab0294" }],
+      imgSrc: niharikaImg,
+      socialLinks: [
+        {
+          icon: "bi bi-linkedin",
+          href: "https://www.linkedin.com/in/niharika-gupta-086ab0294",
+        },
+      ],
     },
     {
       name: "Swastik Chaudhary",
       role: "MERN Stack Developer",
-      imgSrc: "/src/assets/team/swastik.png",
-      socialLinks: [{ icon: "bi bi-linkedin", href: " https://www.linkedin.com/in/swastik-chaudhary-1801/" }],
+      imgSrc: swastikImg,
+      socialLinks: [
+        {
+          icon: "bi bi-linkedin",
+          href: "https://www.linkedin.com/in/swastik-chaudhary-1801/",
+        },
+      ],
     },
   ];
 
@@ -144,7 +177,7 @@ const TeamSection = () => {
                 <img
                   src={member.imgSrc}
                   className="img-fluid"
-                  alt={`${member.name}`}
+                  alt={member.name}
                 />
               </div>
               <div className="social">

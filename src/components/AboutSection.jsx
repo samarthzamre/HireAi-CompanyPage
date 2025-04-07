@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
+import about from '../assets/about/about.png'
 
 const AboutSection = () => {
   return (
@@ -30,7 +31,7 @@ const AboutSection = () => {
             data-aos-delay="200"
           >
             <img
-              src="/src/assets/about/about.png"
+              src={about}
               className="img-fluid"
               alt="About"
             />

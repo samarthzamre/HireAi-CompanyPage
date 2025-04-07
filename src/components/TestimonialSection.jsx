@@ -1,5 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import image1 from "../assets/testimonial/image1.png";
+import image2 from "../assets/testimonial/image2.png";
+import image3 from "../assets/testimonial/image3.png";
+import image4 from "../assets/testimonial/image4.png";
 
 const TestimonialsSection = () => {
   return (
@@ -11,7 +14,11 @@ const TestimonialsSection = () => {
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div
+          id="carouselExampleDark"
+          className="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
           {/* Carousel Indicators */}
           <div className="carousel-indicators">
             <button
@@ -45,12 +52,13 @@ const TestimonialsSection = () => {
                       <i className="bi bi-star-fill"></i>
                     </div>
                     <p className="testimonial-text">
-                      Using this platform, we streamlined our hiring process and connected with top talent effortlessly. It has
-                      made recruitment faster and more efficient for our team.
+                      Using this platform, we streamlined our hiring process and
+                      connected with top talent effortlessly. It has made
+                      recruitment faster and more efficient for our team.
                     </p>
                     <div className="profile mt-4 text-center">
                       <img
-                        src="src/assets/testimonial/image1.png"
+                        src={image1}
                         className="testimonial-img img-fluid rounded-circle shadow"
                         alt="Ankit Sharma"
                       />
@@ -69,12 +77,13 @@ const TestimonialsSection = () => {
                       <i className="bi bi-star-fill"></i>
                     </div>
                     <p className="testimonial-text">
-                      This platform helped me land my dream job in just a few weeks! The personalized job recommendations and
-                      mock interviews were a game changer.
+                      This platform helped me land my dream job in just a few
+                      weeks! The personalized job recommendations and mock
+                      interviews were a game changer.
                     </p>
                     <div className="profile mt-4 text-center">
                       <img
-                        src="src/assets/testimonial/image3.png"
+                        src={image3}
                         className="testimonial-img img-fluid rounded-circle shadow"
                         alt="Priya Mehta"
                       />
@@ -99,12 +108,13 @@ const TestimonialsSection = () => {
                       <i className="bi bi-star-fill"></i>
                     </div>
                     <p className="testimonial-text">
-                      As a small business owner, I needed a platform that could simplify hiring. This platform provided the tools
-                      I needed to connect with skilled candidates effortlessly.
+                      As a small business owner, I needed a platform that could
+                      simplify hiring. This platform provided the tools I needed
+                      to connect with skilled candidates effortlessly.
                     </p>
                     <div className="profile mt-4 text-center">
                       <img
-                        src="src/assets/testimonial/image2.png"
+                        src={image2}
                         className="testimonial-img img-fluid rounded-circle shadow"
                         alt="Ravi Kumar"
                       />
@@ -123,12 +133,13 @@ const TestimonialsSection = () => {
                       <i className="bi bi-star-fill"></i>
                     </div>
                     <p className="testimonial-text">
-                      The skill assessment tools on this platform helped me identify my strengths and prepare for interviews
+                      The skill assessment tools on this platform helped me
+                      identify my strengths and prepare for interviews
                       effectively. I highly recommend it to all job seekers!
                     </p>
                     <div className="profile mt-4 text-center">
                       <img
-                        src="src/assets/testimonial/image4.png"
+                        src={image4}
                         className="testimonial-img img-fluid rounded-circle shadow"
                         alt="Neha Verma"
                       />
@@ -148,7 +159,10 @@ const TestimonialsSection = () => {
             data-bs-target="#carouselExampleDark"
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Previous</span>
           </button>
           <button
@@ -157,7 +171,10 @@ const TestimonialsSection = () => {
             data-bs-target="#carouselExampleDark"
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>

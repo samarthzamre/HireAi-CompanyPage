@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
+import logoImg from "../assets/logo/logo.png"; // Import the logo image
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
           className="logo d-flex align-items-center text-decoration-none"
         >
           <img
-            src="/src/assets/logo/logo.png"
+            src={logoImg} // Use the imported image
             alt="Logo"
             id="logo"
             className="rounded-circle"
@@ -43,7 +43,8 @@ const Header = () => {
               )
             }
             style={{
-              background: "linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)", // Gradient background for Aspirant button
+              background:
+                "linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)", // Gradient background for Aspirant button
               color: "#fff", // White text
               fontWeight: "bold", // Bold text
               border: "2px solid transparent", // Border for hover effect
@@ -74,9 +75,14 @@ const Header = () => {
           <button
             className="btn btn-secondary rounded-pill shadow-lg px-4 py-2 me-3 mb-3"
             id="btnEnterprise"
-            onClick={() => window.open("http://127.0.0.1:5500/enterpriseside/enterprise/index.html")}
+            onClick={() =>
+              window.open(
+                "http://127.0.0.1:5500/enterpriseside/enterprise/index.html"
+              )
+            }
             style={{
-              background: "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)", // Gradient background for Enterprise button
+              background:
+                "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)", // Gradient background for Enterprise button
               color: "#fff", // White text
               fontWeight: "bold", // Bold text
               border: "2px solid transparent", // Border for hover effect
