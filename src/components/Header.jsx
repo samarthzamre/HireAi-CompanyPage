@@ -39,7 +39,7 @@ const Header = () => {
             id="btnAspirant"
             onClick={() =>
               window.open(
-                "https://niharika-hireai.github.io/Hire.AI-Aspirants/"
+                "https://hire-ai-aspirants.onrender.com"
               )
             }
             style={{
