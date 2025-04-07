@@ -77,7 +77,7 @@ const Header = () => {
             id="btnEnterprise"
             onClick={() =>
               window.open(
-                "http://127.0.0.1:5500/enterpriseside/enterprise/index.html"
+                "https://hireai-enterpriseside.onrender.com"
               )
             }
             style={{
