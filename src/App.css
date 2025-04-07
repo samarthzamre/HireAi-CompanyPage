@@ -1,0 +1,127 @@
+/* Light Theme (default) */
+:root {
+  --bg-color: #ffffff; /* Light mode background */
+  --text-color: #000000; /* Light mode text */
+  --link-color: #007bff; /* Light mode links */
+  --button-bg: #f8f9fa; /* Button background */
+  --button-text: #000000; /* Button text */
+  --primary-color: #007bff; /* Primary button */
+  --secondary-color: #6c757d; /* Secondary button */
+  --header-text-color: #000000; /* Default header text color */
+}
+
+/* Dark Theme */
+.dark-mode {
+  --bg-color: #121212; /* Dark mode background */
+  --text-color: #f5f5f5; /* Default light text for better visibility */
+  --link-color: #66ccff; /* Brighter blue for links */
+  --button-bg: #1e1e1e; /* Darker button background */
+  --button-text: #f5f5f5; /* Light text on buttons */
+  --primary-color: #1a73e8; /* Adjusted primary button color */
+  --secondary-color: #03dac6; /* Secondary button color */
+  --alt-text-color: #d4c4f5; /* Purple text color for dark mode */
+  --header-text-color: #d1b8ff; /* Purple header color for dark mode */
+}
+
+/* Apply Global Variables */
+html, body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Ensure legibility with a clean font */
+  text-rendering: optimizeLegibility; /* Improve text clarity */
+  -webkit-font-smoothing: antialiased; /* Reduce blurriness on webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improve rendering on macOS */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Override Black Text in Dark Mode */
+.dark-mode p,
+.dark-mode span,
+.dark-mode li,
+.dark-mode label {
+  color: var(--alt-text-color); /* Purple text for general content */
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: var(--header-text-color); /* Purple header text */
+}
+
+/* Section-Specific Styling */
+.dark-mode section {
+  color: var(--alt-text-color); /* Purple for text in sections */
+}
+
+.dark-mode section h1,
+.dark-mode section h2,
+.dark-mode section h3,
+.dark-mode section h4,
+.dark-mode section h5,
+.dark-mode section h6 {
+  color: var(--header-text-color); /* Purple for headers in sections */
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Inputs and Textareas */
+input, textarea {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  font-family: inherit; /* Keep consistent font style */
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* Header, Main, Footer */
+header, main, footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Ensure consistent and sharp rendering */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box; /* Avoid layout shifts */
+}
+
+/* Specific Styling for Dark Mode */
+.dark-mode a {
+  color: var(--link-color);
+}
+
+.dark-mode input, .dark-mode textarea {
+  color: var(--alt-text-color); /* Purple text in forms */
+  background-color: #1e1e1e; /* Match input background to dark mode */
+}
