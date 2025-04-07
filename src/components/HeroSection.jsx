@@ -23,7 +23,7 @@ const HeroSection = () => {
               <button
                 className="btn-get-started"
                 onClick={() =>
-                  window.open("http://127.0.0.1:5501/enterprise/index.html")
+                  window.open("https://hireai-enterpriseside.onrender.com/enterprise/index.html")
                 }
               >
                 Enterprise<i className="bi bi-arrow-right"></i>
