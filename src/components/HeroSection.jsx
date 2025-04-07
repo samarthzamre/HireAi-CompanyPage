@@ -33,7 +33,7 @@ const HeroSection = () => {
                 className="ms-2 btn-get-started"
                 onClick={() =>
                   window.open(
-                    "https://niharika-hireai.github.io/Hire.AI-Aspirants/"
+                    "https://hire-ai-aspirants.onrender.com"
                   )
                 }
               >
